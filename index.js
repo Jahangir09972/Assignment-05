@@ -54,6 +54,9 @@ selectedSeatsList.innerHTML = selectedSeats.map(seat => `<div class="flex justif
 const selectedSeatCount = document.getElementById('selected-seat-count');
 selectedSeatCount.textContent = selectedSeats.length;
 
+// const DiscountedPriceCount = document.getElementById('Discounted-Price-Count');
+// DiscountedPriceCount.TotalPrice - grandTotal = DiscountedPricee;
+
 const totalPrice = document.getElementById('total-price');
 const total = selectedSeats.reduce((sum, seat) => sum + seatPrices[seat], 0);
 totalPrice.textContent = total;
