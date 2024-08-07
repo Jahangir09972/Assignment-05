@@ -1,0 +1,24 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.seat-button {
+    width: 7.5rem;
+    background-color: #b1bbcf; /* Light gray for available seats */
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.seat-button:hover {
+    background-color: #528fec; /* Slightly darker gray for hover effect */
+}
+
+.seat-button.selected {
+    background-color: #047a0a; /* Green for selected seats */
+}
+
+.seat-button.booked {
+    background-color: #f14343; /* Red for booked seats */
+    cursor: not-allowed;
+}
