@@ -10,15 +10,7 @@ body {
     transition: background-color 0.2s;
 }
 
-.seat-button:hover {
-    background-color: #528fec; /* Slightly darker gray for hover effect */
-}
 
 .seat-button.selected {
     background-color: #047a0a; /* Green for selected seats */
-}
-
-.seat-button.booked {
-    background-color: #f14343; /* Red for booked seats */
-    cursor: not-allowed;
 }
