@@ -14,3 +14,7 @@ body {
 .seat-button.selected {
     background-color: #047a0a; /* Green for selected seats */
 }
+
+.icon{
+    display: flex;
+}
