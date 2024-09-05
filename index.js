@@ -1,13 +1,6 @@
 let selectedSeats = [];
 const seatPrices = {
-A1: 550, B1: 550, C1: 550, D1: 550, E1: 550,
-F1: 550, G1: 550, H1: 550, I1: 550, J1: 550,
-A2: 550, B2: 550, C2: 550, D2: 550, E2: 550,
-F2: 550, G2: 550, H2: 550, I2: 550, J2: 550,
-A3: 550, B3: 550, C3: 550, D3: 550, E3: 550,
-F3: 550, G3: 550, H3: 550, I3: 550, J3: 550,
-A4: 550, B4: 550, C4: 550, D4: 550, E4: 550,
-F4: 550, G4: 550, H4: 550, I4: 550, J4: 550,
+ I4: 550, J4: 550,
 };
 const bookedSeats = ['A1', 'A2']; // Example booked seats, you can change this as needed
 
@@ -65,18 +58,6 @@ const grandTotal = document.getElementById('grand-total');
 grandTotal.textContent = total;
 }
 
-function applyCoupon() {
-const couponCode = document.getElementById('couponCode').value;
-let total = selectedSeats.reduce((sum, seat) => sum + seatPrices[seat], 0);
-
-if (couponCode === 'NEW15') {
-  total *= 0.85; // 15% discount
-} else if (couponCode === 'COUPLE20') {
-  total *= 0.80; // 20% discount
-}
-
-document.getElementById('grand-total').textContent = total;
-}
 
 function nextStep() {
 const name = document.getElementById('name').value;
@@ -125,4 +106,3 @@ alert('Submitted Successfully');
             const message = room.selectSeat();
             seatCountDiv.textContent = message;
         });
- 
