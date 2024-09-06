@@ -18,3 +18,56 @@ body {
 .icon{
     display: flex;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For Nav Bar */
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icon-container:hover {
+    background-color: deepskyblue;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.icon-container:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
