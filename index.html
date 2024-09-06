@@ -103,20 +103,32 @@
               <br><br><br>
               
 <div class="text-center rounded-3xl">
-        <button class="text-black text-2xl font-bold bg-green-500 rounded-2xl p-4"><a href="">Search</a></button>
+  <div class="search-section">
+    <button id="search-btn" class="search-btn">Search</button>
+    <input type="text" id="search-bar" placeholder="Search..." />
+</div>
+
   </div>
   </div>
-      <div class="font-bold text-3xl bg-gray-100 p-4 rounded-3xl gap-1 text-black ">
-          <p>Registered Users    01</p>
-          <p>Forum               05</p>
-          <p>Topics              01</p>
-          <p>Replies             01</p>
+      <div class="font-bold text-3xl bg-gray-100 p-6 rounded-3xl gap-3 text-black ">
+          <div class="flex justify-between gap-4">
+            <div>
+              <p>Registered Users</p><br>
+              <p>Forum</p><br>
+              <p>Topics</p><br>
+              <p>Replies</p>
+            </div>
+            <div>
+              <p>01</p><br>
+              <p>05</p><br>
+              <p>01</p><br>
+              <p>01</p></div>
+          </div>
       </div>
 </div>
-              
-            </div>
-            </div>
-        </div>
+</div>
+</div>
+</div>
     </header>
 
     <main>
@@ -148,10 +160,40 @@
 
 <!-- Github Style -->
 
-                  <div class="grid grid-rows-10 grid-flow-col gap-3">
-                      <button class="seat-button" data-seat="I4">I4</button>
-                      <button class="seat-button" data-seat="J4">J4</button>
+<div class="flex justify-around gap-6 bg-blue-100 p-4 rounded-3xl">
+  <div><img src="images/instragram.png" alt=""></div>
+  <div>
+    <p># Music Author : Awlad Hossain</p><br>
+    <h3 class="text-lg"><b>10 Kids Unaware of Their Halloween Costume</b></h3><br>
+    <p>It’s one thing to subject yourself to ha Halloween costume mishap because, 
+      hey that’s your prerogative</p><br>
+      <hr><br>
+
+    <div class="flex justify-between">
+
+      <div class="flex justify-between gap-3">
+        <div class="flex justify-around gap-3">
+          <div><i class="fa-regular fa-envelope"></i></div>
+          <div><p>560</p></div>
+        </div>
+        <div class="flex justify-around gap-3">
+          <div><i class="fa-regular fa-eye"></i></div>
+          <div><p>1,568</p></div>
+        </div>
+        <div class="flex justify-around gap-3">
+          <div><i class="fa-regular fa-clock"></i></div>
+          <div><p>5 min</p></div>
+        </div>
       </div>
+
+      <div>
+        <button class="seat-button" data-seat="I4"><i class="fa-solid fa-square-envelope"></i></button>
+      </div>
+    </div>
+     
+  </div>
+</div>
+
                   </div>
               </div>
           </div>
@@ -277,6 +319,8 @@
 
 <br><br><br><br>
 
+<script src="index.js"></script>
+
 </body>
 
     <!-- Footer Section -->
@@ -300,4 +344,5 @@
               <p>2017, All Rights Reserved.</p>
             </div>
     </footer>
+    
 </html>

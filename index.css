@@ -71,3 +71,39 @@ body {
     display: block;
     opacity: 1;
 }
+
+/* Separate Search Section */
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search-bar {
+    display: none;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#search-bar.active {
+    display: block;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: rgb(6, 150, 26);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: dodgerblue;
+}

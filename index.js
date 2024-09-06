@@ -106,3 +106,9 @@ alert('Submitted Successfully');
             const message = room.selectSeat();
             seatCountDiv.textContent = message;
         });
+
+        document.getElementById('search-btn').addEventListener('click', function() {
+          const searchBar = document.getElementById('search-bar');
+          searchBar.classList.toggle('active');
+      });
+      
