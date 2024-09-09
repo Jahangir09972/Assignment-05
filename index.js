@@ -1,6 +1,6 @@
 let selectedSeats = [];
 const seatPrices = {
- I4: 550, J4: 550,
+ I4: 1568, J4: 1568,
 };
 const bookedSeats = ['A1', 'A2']; // Example booked seats, you can change this as needed
 
